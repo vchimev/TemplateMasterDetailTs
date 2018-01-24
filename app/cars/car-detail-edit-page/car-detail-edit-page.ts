@@ -70,10 +70,14 @@ export function onDoneButtonTap(args: EventData): void {
     /* ***********************************************************
     * Comment out the code block below if you made the app editable.
     *************************************************************/
-    const readOnlyMessage = "Check out the \"Firebase database setup\" section in the readme file to make it editable."; // tslint:disable-line:max-line-length
-    const queue = Promise.resolve();
-    queue.then(() => alert({ title: "Read-Only Template!", message: readOnlyMessage, okButtonText: "Ok" }))
-        .then(() => topmost().navigate({
+
+    // TODO: Uncomment the lines below.
+
+    // const readOnlyMessage = "Check out the \"Firebase database setup\" section in the readme file to make it editable."; // tslint:disable-line:max-line-length
+    // const queue = Promise.resolve();
+    // queue.then(() => alert({ title: "Read-Only Template!", message: readOnlyMessage, okButtonText: "Ok" }))
+    //     .then(() =>
+    topmost().navigate({
             moduleName: "cars/cars-list-page",
             clearHistory: true,
             animated: true,
@@ -82,7 +86,9 @@ export function onDoneButtonTap(args: EventData): void {
                 duration: 200,
                 curve: "ease"
             }
-        }));
+        }
+    //)
+    );
 }
 
 export function onSelectorTap(args: EventData): void {
