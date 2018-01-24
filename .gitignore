@@ -1,0 +1,8 @@
+hooks
+node_modules
+platforms
+
+*.js
+*.css
+
+package-lock.json
